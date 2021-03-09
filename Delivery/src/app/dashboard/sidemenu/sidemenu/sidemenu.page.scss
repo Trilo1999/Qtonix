@@ -1,0 +1,128 @@
+.active {
+    --ion-text-color: var(--ioncolor-dark);
+        ion-icon {
+            --ion-text-color-rgb: var(--ioncolor-primary);
+        }
+}
+.active-parent {
+    font-weight: 500;
+}
+.sub-item {
+padding-left: 30px;
+}
+ion-menu-toggle{
+    display:block !important;
+}
+
+* {
+    font-family: lato;
+}
+.menu-header-bg{
+    height: 180px;
+    width: 350px;
+    background-color: rgb(238, 91, 91);
+    background: linear-gradient(90deg,#d61616,0%,#eb0303 100%);
+    box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.5);
+    transform: rotate(-15deg);
+    border-radius: 10px 10px 10px 50px;
+    margin-left: -18px;
+    margin-top: -50px;
+    margin-bottom: 60px;
+}
+.header-content{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 7px solid #e4cece;
+        margin-right: 14px;
+    }
+    h2{
+        font-weight: 300;
+        color: #fff;
+    }
+    p{
+        font-size: 12px;
+        color: #e4e4e4;
+        font-weight: 100;
+        letter-spacing: 0.4px;
+    }
+}
+
+.menu-items{
+   
+    margin:  0px;
+    ion-icon{
+        margin-right: 20px;
+        color: #86979f;
+
+    }
+    ion-item{
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+}ion-toolbar {
+    --background: #f5f5f3;
+  
+    ion-button {
+      text-transform: initial;
+      font-size: 17px;
+    }
+  }
+  
+  ion-content {
+    --background: #f5f5f3;
+  
+    #header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      h1 {
+        font-weight: 700;
+        font-size: 26px;
+        color: #010100;
+        margin-bottom: 15%;
+      }
+  
+      img {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        border: 8px solid #ffffff;
+      }
+    }
+  
+    #form {
+      margin-top: 15%;
+      padding-left: 30px;
+      padding-right: 30px;
+  
+      ion-button {
+        margin-top: 35px;
+        height: 48px;
+        font-size: 18px;
+        text-transform: initial;
+        border-radius: 50px;
+        box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.05);
+        --box-shadow: none;
+      }
+    }
+  }
+ ion-content{
+    --background: linear-gradient(90deg,#f1c0c0,0%,#fadcdc 100%);
+  }
+  ion-list{
+    background: linear-gradient(90deg,#f1c0c0,0%,#fadcdc 100%);
+  }
+  .mar{
+      margin: 5px;
+  }
+  .pad{
+      --padding: 10px;
+  }

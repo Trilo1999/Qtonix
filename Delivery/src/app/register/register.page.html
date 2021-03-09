@@ -1,0 +1,48 @@
+<ion-content id="login_content">
+  <ion-grid>
+    <ion-row class="ion-padding">
+      <ion-col size-md="6" offset-md="3">
+        <div class="ion-text-center">      
+            <img src="assets/images/fire.png" alt="logo" height="100px" width="150px">
+        </div>
+        <h3 class="ion-text-center">Demo App Delivery</h3>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <h2 class="ion-text-center">Sign Up</h2>
+          <ion-card-content>
+            
+            <ion-item>
+              <ion-label position="floating">Username</ion-label>
+              <ion-input [type]="text" [(ngModel)]="login_user"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input [type]="email" [(ngModel)]="login_email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Address</ion-label>
+              <ion-input [type]="text" [(ngModel)]="login_address"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input [type]="show ? 'text' : 'password'" [(ngModel)]="login_password"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Confirm Password</ion-label>
+              <ion-input [type]="show ? 'text' : 'password'" [(ngModel)]="login_confirm_password"></ion-input>
+            </ion-item>
+            <ion-button expand="full" (click)="register()" >Sign up <ion-spinner name="lines-small" *ngIf="loader"></ion-spinner> </ion-button>
+            <p class="ion-padding ion-text-center"><a href="/home">Or</a></p>
+            <p class="ion-padding ion-text-center"><a href="/home">Login here</a></p>
+          </ion-card-content>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+ 
+    <div style="bottom: 0px; width: 100%; text-align: center ; margin-top: 150px;">
+      <p style="color: grey;">&copy; 2021 Trilo demo Software Pvt Ltd</p>
+  </div>
+</ion-content>

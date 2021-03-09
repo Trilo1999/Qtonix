@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu-button"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ 
+  <ion-grid no-padding>
+    <div class="option ion-padding ion-text-center">
+      <ion-row>
+      <ion-col class="cursor-pointer"  size="4">
+        <ion-card text-center>
+          <ion-icon color="success" name="person"></ion-icon>
+            <ion-card-subtitle>Total Users</ion-card-subtitle>
+            <ion-card-subtitle>25</ion-card-subtitle>
+          </ion-card>
+      </ion-col>
+      <ion-col class="cursor-pointer" size="4">
+        <ion-card >
+          <ion-icon name="document" color="warning" ></ion-icon>
+            <ion-card-subtitle>demo page</ion-card-subtitle>
+            <ion-card-subtitle>1</ion-card-subtitle>
+          </ion-card>
+      </ion-col>
+      <ion-col class="cursor-pointer"  size="4">
+        <ion-card>
+          <ion-icon color="primary" name="car"></ion-icon>
+            <ion-card-subtitle>demo Page</ion-card-subtitle>
+            <ion-card-subtitle>3</ion-card-subtitle>
+        </ion-card>
+        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="cursor-pointer"  size="4">
+        <ion-card >
+          <ion-icon name="swap" color="danger"></ion-icon>
+            <ion-card-subtitle>demo page</ion-card-subtitle>
+            <ion-card-subtitle>4</ion-card-subtitle>
+            <!-- {{dataCount.pickupCount}} -->
+          </ion-card>
+      </ion-col>
+      <ion-col class="cursor-pointer" size="4">
+        <ion-card >
+          <ion-icon color="success" name="book"></ion-icon>
+            <ion-card-subtitle>demo page</ion-card-subtitle>
+            <ion-card-subtitle>5</ion-card-subtitle>
+          </ion-card>
+      </ion-col>
+      <ion-col class="cursor-pointer"  size="4">
+        <ion-card [routerLink]="['/dashboard/profile']">
+          <ion-icon name="happy"></ion-icon>
+            <ion-card-subtitle>User</ion-card-subtitle>
+            <ion-card-subtitle>Profile</ion-card-subtitle>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    </div>
+  </ion-grid>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Demo graph for 12months</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart class="graph"></canvas>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
